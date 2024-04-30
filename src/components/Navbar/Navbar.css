@@ -1,0 +1,8 @@
+.Navbar {
+    display: flex;
+    background-color: rgb(149, 149, 128);
+}
+
+.Navbar img {
+    width: 5%
+}

@@ -1,0 +1,15 @@
+.Sidebar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 150px;
+    position: fixed;
+    overflow-x: hidden;
+    background-color: rgb(55, 52, 49);
+}
+
+.Sidebar a {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}

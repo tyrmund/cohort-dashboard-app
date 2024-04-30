@@ -1,0 +1,16 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+}
+
+.HomePage {
+    font-family: sans-serif;
+}
