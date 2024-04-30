@@ -9,3 +9,8 @@
     justify-content: space-around;
     align-items: center;
 }
+
+.Footer a {
+    text-decoration: none;
+    color: white;
+}

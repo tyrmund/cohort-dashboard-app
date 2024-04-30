@@ -10,6 +10,7 @@
 }
 
 .Sidebar a {
-    margin-top: 15px;
-    margin-bottom: 15px;
+    margin-top: 30px;
+    text-decoration: none;
+    color: white;
 }
