@@ -1,0 +1,8 @@
+.StudentsList {
+    width: 100%;
+}
+
+.StudentsList .studentRow {
+    display: flex;
+    justify-content: space-between;
+}

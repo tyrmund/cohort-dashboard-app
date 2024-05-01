@@ -1,13 +1,19 @@
-import './../Navbar/Navbar.css'
-import kanbanLogo from './../../assets/kanban-logo.png'
+import reactLogo from './../../assets/react.svg'
+import navicon from './../../assets/navicon.png'
+import './Navbar.css'
 
-const NavBar = () => {
+const Navbar = () => {
     return (
-        <header className='Navbar'>
-            <img src={kanbanLogo} alt="KanbanLogo" />
-            <h1 className='Title'>Kanban</h1>
-        </header>
+        <div className="Navbar">
+            <nav>
+                <div className='buttons'>
+                    <img src={navicon} alt="Navicon" className='navicon' />
+                    <h1>Students</h1>
+                </div>
+                <img src={reactLogo} alt="Logotipo" className='logo' />
+            </nav>
+        </div>
     )
 }
 
-export default NavBar
+export default Navbar

@@ -1,10 +1,21 @@
-import './../Sidebar/Sidebar.css'
+import './Sidebar.css'
 
 const Sidebar = () => {
     return (
-        <div className='Sidebar'>
-            <a className='HomeLink' href="#">Home</a>
-            <a className='AboutLink' href="#">About</a>
+        <div className="Sidebar">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#">Students</a>
+                    </li>
+                    <li>
+                        <a href="#">Add student</a>
+                    </li>
+                    <li>
+                        <a href="#">About</a>
+                    </li>
+                </ul>
+            </nav>
         </div>
     )
 }

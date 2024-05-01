@@ -1,10 +1,8 @@
-import './../Footer/Footer.css'
-
 const Footer = () => {
     return (
-        <footer className='Footer'>
-            <a href="https://github.com/tyrmund/first-react-app">GitHub Link!</a>
-        </footer>
+        <div className="Footer">
+            <h1>FooterFooterFooterFooterFooter</h1>
+        </div>
     )
 }
 
