@@ -9,10 +9,7 @@
 }
 
 .Sidebar a {
-    color: black;
+    margin-top: 30px;
     text-decoration: none;
-    text-align: center;
-    display: block;
-    padding: 20px 0;
-    border-bottom: 1px solid #ccc;
+    color: white;
 }
