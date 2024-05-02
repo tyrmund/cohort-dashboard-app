@@ -1,4 +1,5 @@
 import './Sidebar.css'
+import { Link } from 'react-router-dom'
 
 const Sidebar = () => {
     return (
@@ -6,13 +7,13 @@ const Sidebar = () => {
             <nav>
                 <ul>
                     <li>
-                        <a href="#">Students</a>
+                        <Link to={'/'}>Products</Link>
                     </li>
                     <li>
-                        <a href="#">Add student</a>
+                        <Link to={'/add-product'}>Add Product</Link>
                     </li>
                     <li>
-                        <a href="#">About</a>
+                        <Link to={'/about'}>About</Link>
                     </li>
                 </ul>
             </nav>
