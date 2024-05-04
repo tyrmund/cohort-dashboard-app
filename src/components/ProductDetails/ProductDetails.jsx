@@ -1,22 +1,33 @@
-import { useParams } from "react-router-dom"
-import productsData from './../../data/products.json'
+import { Link, useParams } from 'react-router-dom'
+import './ProductDetails.css'
 
-function ProductDetails() {
+const ProductDetails = ({ products }) => {
 
-    const { productId } = useParams()
-    const productInfo = productsData.find(product => +product.id === +productId)
+    const { product_id } = useParams()
+
+    const foundProduct = products.find(elm => elm.id === Number(product_id))
 
     return (
-
-        <div>
-            <h1>Product details</h1>
+        <div className="ProductDetails">
+            <h1>Detalles de {foundProduct.title}</h1>
             <hr />
-            <p>{productInfo.description}</p>
+            <p>{foundProduct.description}</p>
             <hr />
-        </div>
+            <p>Precio {foundProduct.price}</p>
+            <p>{foundProduct.stock > 50 ? '🟢 Stock de sobra' : '🔴 Bajo stock'}</p>
+            <hr />
 
+            {
+                foundProduct.images.map(imageUrl => {
+                    return <img src={imageUrl} alt={foundProduct.title} style={{ width: 200 }} />
+                })
+            }
+
+            <hr />
+
+            <Link to={'/productos/listado'} >Volver a productos</Link>
+        </div >
     )
-
 }
 
 export default ProductDetails

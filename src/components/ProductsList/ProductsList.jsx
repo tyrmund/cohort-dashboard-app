@@ -4,19 +4,10 @@ import productsData from './../../data/products.json'
 
 import './ProductsList.css'
 
-const ProductsList = () => {
-
-    const [products, setProducts] = useState(productsData)
-
-    const handleProductRemove = (productIdToDelete) => {
-        const productsAfterDeletion = products.filter(eachProduct => eachProduct.id != productIdToDelete)
-        setProducts(productsAfterDeletion)
-    }
+const ProductsList = ({ products, handleProductRemove }) => {
 
     return (
         <div className="ProductsList">
-            <h1>Productos</h1>
-            <hr />
 
             <table>
 
@@ -26,6 +17,7 @@ const ProductsList = () => {
                         <th>Marca</th>
                         <th>Precio</th>
                         <th>Puntuación</th>
+                        <th>Detalles</th>
                         <th>Eliminar</th>
                     </tr>
                 </thead>
@@ -49,4 +41,3 @@ const ProductsList = () => {
 }
 
 export default ProductsList
-
